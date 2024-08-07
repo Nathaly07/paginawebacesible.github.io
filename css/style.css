@@ -1,0 +1,228 @@
+/* header */
+header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.titulo {
+    color: rgba(248, 249, 250, 1);
+    font-family: Spartan;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+body {
+    margin: 0;
+}
+
+#imagen{
+    display:flex;
+    height: 496px;
+    background-image: url(../img/portada.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Texto{
+    width: 530px;
+    color: rgba(255,255,224,1);
+    position: absolute;
+    top: 231px;
+    left: 70px;
+    font-family: Lora;
+    font-weight: Bold;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+}
+#Producto{
+    width: 356px;
+    color: rgba(73,80,87,1);
+    padding-left: 20px;
+    top: 0px;
+    left: 10px;
+    font-family: Lora;
+    font-weight: Bold;
+    font-size: 36px;
+    opacity: 1;
+    text-align: left;
+}
+.Prod_Populares {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px; 
+}
+.Prod_Populares article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.titulo_sombrero{
+    color: rgba(73,80,87,1);
+    font-family: Lora;
+    font-weight: Bold;
+    font-size: 19px;
+    opacity: 1;
+    text-align: left;
+}
+
+.Precio{
+    color: rgba(73,80,87,1);
+    font-family: Lora;
+    font-weight: Bold;
+    font-size: 17px;
+    opacity: 1;
+    text-align: left;
+}
+.descripcion{
+    color: rgb(77, 87, 97);
+    font-family: Lora;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: justify;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.tabla_producto{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Lora;
+    font-size: 15px;
+
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: black;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    th {
+        text-align: right;
+    }
+
+    th::before {
+        content: attr(data-th) ": ";
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    tr {
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid #ccc;
+    }
+}
+
+footer {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+    font-family: Lora;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
+}
